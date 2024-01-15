@@ -2,4 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --bg: #0d0c22;
+  --bgSoft: #2d2d2d;
+  --text: white;
+  --textSoft: #e5e5e5;
+  --btn: #3673fd;
 
+}
+body{
+  background-color: var(--bg);
+  color: var(--text);
+}
+.container{
+  width: 1536px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
