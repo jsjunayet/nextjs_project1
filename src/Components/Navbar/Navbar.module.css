@@ -8,8 +8,49 @@
 .logo{
     font-size: 30px;
     font-weight: bold;
+    z-index: 100;
 }
 .link{
     display: flex;
     gap: 20px;
+}
+.mobileBotton,.mobiledevices{
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .link{
+        display: none;
+    }
+    .mobileBotton{
+        display: block;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .mobiledevices {
+        position: absolute;
+        top: 0; /* Change from 100px to 0 */
+        right: 0;
+        height: calc(60vh - 10px); /* Adjusted height */
+        width: 100%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        overflow: hidden;
+        animation: slideIn 1.5s ease; /* Added animation */
+    }
+    
+    @keyframes slideIn {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+    
 }
