@@ -1,9 +1,12 @@
 import Image from 'next/image'
+import styles from './Home.module.css';
 
 export default function Home() {
   return (
     <div>
-      <h1>hello world</h1>
+      <div className={styles.conatiner}>
+        <h1 className=''> there are six seaono in banglaeesh</h1>
+      </div>
       
     </div>
   )

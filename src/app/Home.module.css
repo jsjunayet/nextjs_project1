@@ -1,0 +1,14 @@
+.conatiner{
+    background: url('../img/contacj.jpg'),linear-gradient(rgb(227, 221, 221), rgb(154, 141, 141));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+
+}
+@media (max-width: 340px) {
+    .container {
+        background-size: cover; /* Adjust the background size for smaller screens */
+      }
+  }
