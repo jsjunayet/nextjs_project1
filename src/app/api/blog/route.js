@@ -3,9 +3,9 @@ const { default: client } = require('@/lib/Utilies');
 const db = client.db("NextjsProject1");
 const UserCollection = db.collection("user");
 export async function POST(request) {
-    const {title,descriptin} = await request.json()
-    console.log(title,descriptin);
-    await UserCollection.insertOne({title, descriptin})
+    const {email,names} = await request.json()
+    console.log(email,names);
+    await UserCollection.insertOne({email,names})
     return NextResponse.json({message: "Topic create"})
 }
 export async function GET(request){
