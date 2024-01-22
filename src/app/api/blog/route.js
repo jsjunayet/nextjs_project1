@@ -13,7 +13,7 @@ export async function GET(request){
     return NextResponse.json({result})
 }
 export async function DELETE(request){
-    const {id }= request.nextUrl.searchParams.get("id")
+    const {id }= request.nextUrl.searchParams.get("bd")
     const result = await UserCollection.findOneAndDelete({id})
     return NextResponse.json({message:"deleted"})
 }
